@@ -1,0 +1,164 @@
+WARNING: `anchor-lang` version(0.28.0) and the current CLI version(0.31.1) don't match.
+
+	This can lead to unwanted behavior. To use the same CLI version, add:
+
+	[toolchain]
+	anchor_version = "0.28.0"
+
+	to Anchor.toml
+
+WARNING: Adding `solana-program` as a separate dependency might cause conflicts.
+To solve, remove the `solana-program` dependency and use the exported crate from `anchor-lang`.
+`use solana_program` becomes `use anchor_lang::solana_program`.
+Program name: `merkle-distributor`
+
+Error: Function _ZN4core5slice4sort6stable14driftsort_main17h30350018bcde294bE Stack offset of 4104 exceeded max offset of 4096 by 8 bytes, please minimize large stack variables. Estimated function frame size: 4160 bytes. Exceeding the maximum stack offset may cause undefined behavior during execution.
+
+Error: Function _ZN112_$LT$solana_program..instruction..InstructionError$u20$as$u20$solana_frozen_abi..abi_example..AbiEnumVisitor$GT$13visit_for_abi17h0ef377bd1029dd71E Stack offset of 6592 exceeded max offset of 4096 by 2496 bytes, please minimize large stack variables. Estimated function frame size: 6656 bytes. Exceeding the maximum stack offset may cause undefined behavior during execution.
+
+warning: unexpected `cfg` condition value: `custom-heap`
+  --> programs/merkle-distributor/src/lib.rs:35:1
+   |
+35 | #[program]
+   | ^^^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `custom-heap` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+   = note: this warning originates in the macro `$crate::custom_heap_default` which comes from the expansion of the attribute macro `program` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `custom-panic`
+  --> programs/merkle-distributor/src/lib.rs:35:1
+   |
+35 | #[program]
+   | ^^^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `custom-panic` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the macro `$crate::custom_panic_default` which comes from the expansion of the attribute macro `program` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `anchor-debug`
+  --> programs/merkle-distributor/src/instructions/claim_locked.rs:19:10
+   |
+19 | #[derive(Accounts)]
+   |          ^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `anchor-debug` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the derive macro `Accounts` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `anchor-debug`
+  --> programs/merkle-distributor/src/instructions/clawback.rs:12:10
+   |
+12 | #[derive(Accounts)]
+   |          ^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `anchor-debug` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the derive macro `Accounts` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `anchor-debug`
+  --> programs/merkle-distributor/src/instructions/new_claim.rs:25:10
+   |
+25 | #[derive(Accounts)]
+   |          ^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `anchor-debug` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the derive macro `Accounts` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `anchor-debug`
+  --> programs/merkle-distributor/src/instructions/new_distributor.rs:14:10
+   |
+14 | #[derive(Accounts)]
+   |          ^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `anchor-debug` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the derive macro `Accounts` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `anchor-debug`
+  --> programs/merkle-distributor/src/instructions/set_admin.rs:11:10
+   |
+11 | #[derive(Accounts)]
+   |          ^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `anchor-debug` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the derive macro `Accounts` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `anchor-debug`
+  --> programs/merkle-distributor/src/instructions/set_clawback_receiver.rs:12:10
+   |
+12 | #[derive(Accounts)]
+   |          ^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `anchor-debug` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the derive macro `Accounts` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `anchor-debug`
+  --> programs/merkle-distributor/src/lib.rs:35:1
+   |
+35 | #[program]
+   | ^^^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `anchor-debug` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the attribute macro `program` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `anchor-debug`
+  --> programs/merkle-distributor/src/lib.rs:35:1
+   |
+35 | #[program]
+   | ^^^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `anchor-debug` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the derive macro `Accounts` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `no-log-ix-name`
+  --> programs/merkle-distributor/src/lib.rs:35:1
+   |
+35 | #[program]
+   | ^^^^^^^^^^
+   |
+   = note: expected values for `feature` are: `cpi`, `default`, `no-entrypoint`, and `no-idl`
+   = help: consider adding `no-log-ix-name` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the attribute macro `program` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+Error: Function _ZN95_$LT$merkle_distributor..instructions..new_claim..NewClaim$u20$as$u20$anchor_lang..Accounts$GT$12try_accounts17h86b7184d49126717E Stack offset of 4392 exceeded max offset of 4096 by 296 bytes, please minimize large stack variables. Estimated function frame size: 4544 bytes. Exceeding the maximum stack offset may cause undefined behavior during execution.
+
+Error: A function call in method _ZN95_$LT$merkle_distributor..instructions..new_claim..NewClaim$u20$as$u20$anchor_lang..Accounts$GT$12try_accounts17h86b7184d49126717E overwrites values in the frame. Please, decrease stack usage or remove parameters from the call.The function call may cause undefined behavior during execution.
+
+Error: A function call in method _ZN95_$LT$merkle_distributor..instructions..new_claim..NewClaim$u20$as$u20$anchor_lang..Accounts$GT$12try_accounts17h86b7184d49126717E overwrites values in the frame. Please, decrease stack usage or remove parameters from the call.The function call may cause undefined behavior during execution.
+
+Error: A function call in method _ZN95_$LT$merkle_distributor..instructions..new_claim..NewClaim$u20$as$u20$anchor_lang..Accounts$GT$12try_accounts17h86b7184d49126717E overwrites values in the frame. Please, decrease stack usage or remove parameters from the call.The function call may cause undefined behavior during execution.
+
+Error: Function _ZN107_$LT$merkle_distributor..instructions..new_distributor..NewDistributor$u20$as$u20$anchor_lang..Accounts$GT$12try_accounts17h1854de6e5ff213c3E Stack offset of 4568 exceeded max offset of 4096 by 472 bytes, please minimize large stack variables. Estimated function frame size: 4928 bytes. Exceeding the maximum stack offset may cause undefined behavior during execution.
+
+Error: A function call in method _ZN107_$LT$merkle_distributor..instructions..new_distributor..NewDistributor$u20$as$u20$anchor_lang..Accounts$GT$12try_accounts17h1854de6e5ff213c3E overwrites values in the frame. Please, decrease stack usage or remove parameters from the call.The function call may cause undefined behavior during execution.
+
+Error: A function call in method _ZN107_$LT$merkle_distributor..instructions..new_distributor..NewDistributor$u20$as$u20$anchor_lang..Accounts$GT$12try_accounts17h1854de6e5ff213c3E overwrites values in the frame. Please, decrease stack usage or remove parameters from the call.The function call may cause undefined behavior during execution.
+
+Error: A function call in method _ZN107_$LT$merkle_distributor..instructions..new_distributor..NewDistributor$u20$as$u20$anchor_lang..Accounts$GT$12try_accounts17h1854de6e5ff213c3E overwrites values in the frame. Please, decrease stack usage or remove parameters from the call.The function call may cause undefined behavior during execution.
+
+warning: `merkle-distributor` (lib) generated 16 warnings (5 duplicates)
+    Finished `release` profile [optimized] target(s) in 0.29s
+Error: `idl-build` feature is missing. To solve, add
+
+[features]
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+in `"/Users/mohtashimnawaz/Desktop/merkle-distribution/programs/merkle-distributor/Cargo.toml"`.
