@@ -97,7 +97,7 @@ describe("merkle-distribution (Jito POC)", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const programId = new PublicKey("GCPNXuyuLqQDwpyJeFctdcYpKadWzj9ipxMNbyb7JyA4");
+  const programId = new PublicKey("8GZjHcX5n2G41uzTBRcb42ZXC3Gw2WsiHD9hyuAKPFVH");
   const program = new anchor.Program(idl as any, programId, provider);
   
   let mint: PublicKey;
